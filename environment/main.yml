@@ -1,0 +1,12 @@
+---
+- hosts: all
+
+  tasks:
+    - name: get environment variables
+      shell: env
+      register: shell_environment
+
+    - name: show environment variables
+      debug:
+        var: shell_environment
+
