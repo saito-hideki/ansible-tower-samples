@@ -3,7 +3,7 @@
 
   tasks:
     - name: get environment variables
-      shell: env
+      shell: env | sort
       register: shell_environment
 
     - name: show environment variables
