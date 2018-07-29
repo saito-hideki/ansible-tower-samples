@@ -8,7 +8,7 @@
 
     - name: pause task in specified seconds
       pause:
-        seconds: {{ pause_second | default(5) }}
+        seconds: "{{ pause_second | default(5) }}"
 
     - name: after pause task
       debug:
