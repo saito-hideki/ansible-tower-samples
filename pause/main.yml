@@ -1,0 +1,15 @@
+---
+- hosts: all
+
+  tasks:
+    - name: before pause task
+      debug:
+        msg: "Before pause task"
+
+    - name: pause task in specified seconds
+      pause:
+        seconds: {{ pause_second | default(5) }}
+
+    - name: after pause task
+      debug:
+        msg: "After pause task"
