@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  gather_facts: false
+
+  tasks:
+    - os_server_facts:
+        cloud: devstack
+
+    - debug:
+        var: openstack_servers
