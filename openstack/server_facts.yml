@@ -15,7 +15,6 @@
 
     - os_server_facts:
         cloud: devstack
-        server: *
 
     - debug:
       var: openstack_servers
