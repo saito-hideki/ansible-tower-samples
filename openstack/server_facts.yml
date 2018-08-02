@@ -15,7 +15,7 @@
 
     - os_server_facts:
         cloud: devstack
-        server: ansible.*
+        server: *
 
     - debug:
       var: openstack_servers
