@@ -15,4 +15,4 @@
       ignore_errors: True
 
     - name: show file list
-      shell: ls -lart
+      shell: ls -laRt ~/
