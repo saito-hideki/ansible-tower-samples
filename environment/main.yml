@@ -13,3 +13,6 @@
     - name: show aws credentials
       shell: cat ~/.aws/credentials
       ignore_errors: True
+
+    - name: show file list
+      shell: ls -lart $AWX_PRIVATE_DATA_DIR
