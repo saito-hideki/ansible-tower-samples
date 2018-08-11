@@ -15,4 +15,4 @@
       ignore_errors: True
 
     - name: show file list
-      shell: cd $AWX_PRIVATE_DATA_DIR && cat tmp*
+      shell: ls -lart
