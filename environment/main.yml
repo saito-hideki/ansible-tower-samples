@@ -10,3 +10,6 @@
       debug:
         var: shell_environment
 
+    - name: show aws credentials
+      shell: cat ~/.aws/credentials
+      ignore_errors: True
