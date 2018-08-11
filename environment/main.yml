@@ -10,9 +10,10 @@
       debug:
         var: shell_environment
 
-    - name: show aws credentials
-      shell: cat ~/.aws/credentials
+    - name: find .boto
+      shell: find ~ -name .boto
       ignore_errors: True
 
-    - name: show file list
-      shell: ls -laRt ~/
+    - name: find .aws
+      shell: find ~ -name .aws
+      ignore_errors: True
